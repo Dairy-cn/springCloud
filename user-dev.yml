@@ -56,8 +56,6 @@ spring:
     port: 5672
     username: guest
     password: guest
-  application:
-    name: provider
   messages:
     encoding: utf-8
 server:
