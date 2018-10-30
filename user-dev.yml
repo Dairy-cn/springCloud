@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     #    116.62.200.72:3306/lidayuan
