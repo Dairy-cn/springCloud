@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     #    116.62.200.72:3306/lidayuan
@@ -21,13 +19,13 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
-
+  application:
+    name: user 
   http:
     encoding:
       charset: UTF-8
   mvc:
     throw-exception-if-no-handler-found: false
-
   freemarker:
     allow-request-override: false
     cache: false
@@ -58,9 +56,6 @@ spring:
     port: 5672
     username: guest
     password: guest
-  output:
-    ansi:
-      enabled: always
   application:
     name: provider
   messages:
@@ -71,22 +66,5 @@ server:
     context-path: /glgas
 mybatis:
   mapper-locations: classpath*:mapping/*.xml
-pagehelper:
-  helper-dialect: mysql
-  reasonable: true
-  support-methods-arguments: true
-  row-bounds-with-count: countSql
 uploadDir:
   image: /opt/javaapps/uploads/
-logging:
-  level:
-    com.sxwl.gas.mapper.*: debug
-project-url:
-  wechatMpAuthorize: http://dairry.cn
-  wechatOpenAuthorize: http://dairry.cn
-  glGas: http://localhost/
-
-level:
-  classpath*:mapping/*/*.xml: debug
-girl:
-  dairuidairui 
